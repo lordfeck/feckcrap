@@ -1,0 +1,24 @@
+[begin] (Start)
+# run xdg to generate the application menu
+    [include] (~/.fluxbox/xdg_menu)
+# put commonly used programs here
+    [exec] (Terminal) {xterm}
+    [separator]
+    [submenu] (Appearance)
+        [submenu] (System Styles) {Choose a style...}
+            [stylesdir] (/usr/share/fluxbox/styles)
+        [end]
+        [submenu] (User Styles) {Choose a style...}
+            [stylesdir] (~/.fluxbox/styles)
+        [end]
+    [end]
+    [submenu] (FluxBox)
+        [workspaces] (Workspaces)
+        [config] (Configure)
+        [reconfig] (Reconfig)
+        [restart] (Restart)
+        [exec] (Update Fluxbox Menu) {xdgmenumaker -f fluxbox > ~/.fluxbox/xdg_menu}
+        [separator]
+        [exit] (Exit)
+    [end]
+[end]
