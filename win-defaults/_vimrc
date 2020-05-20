@@ -1,0 +1,18 @@
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+
+set backup
+set backupdir=C:\WINDOWS\Temp
+set backupskip=C:\WINDOWS\Temp\*
+set undodir=C:\WINDOWS\Temp
+set directory=C:\WINDOWS\Temp
+set undodir=C:\WINDOWS\Temp
+set writebackup
+colorscheme torte
+" Force four space tabs
+set tabstop=4
+set shiftwidth=4
+set expandtab
+" put into _gvimrc?
+set guifont=Noto_Mono_for_Powerline:h9:cANSI:qDRAFT
+
