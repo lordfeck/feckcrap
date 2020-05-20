@@ -2,12 +2,12 @@ source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 
 set backup
-set backupdir=C:\WINDOWS\Temp
-set backupskip=C:\WINDOWS\Temp\*
-set undodir=C:\WINDOWS\Temp
-set directory=C:\WINDOWS\Temp
-set undodir=C:\WINDOWS\Temp
+set backupdir=C:\\Temp
+set undodir=C:\\Temp
+set directory=C:\\Temp
+set undodir=C:\\Temp
 set writebackup
+set dir=$TEMP
 colorscheme torte
 " Force four space tabs
 set tabstop=4
