@@ -1,8 +1,12 @@
+env:
+  TERM: xterm-256color
+
 window:
   dimensions:
-    columns: 80
-    lines: 25
+    columns: 100
+    lines: 30
   title: Alacritty
+
 font:
   normal:
     style: ProFont for Powerline
@@ -10,6 +14,7 @@ font:
   bold:
     style: ProFont for Powerline Bold
   size: 9.0
+
 colors:
   cursor:
     text: '0xfefff2'
@@ -46,6 +51,6 @@ visual_bell:
   duration: 10
   color: '0xffffff'
 
-background_opacity: 0.9
+background_opacity: 0.8
 
 dynamic_title: true

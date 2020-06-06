@@ -35,3 +35,6 @@ map <F12> :tabn <CR>
 
 colo desert
 set guifont=Monospace\ 9
+
+" Open twig as Django
+autocmd BufNewFile,BufRead *.twig set syntax=django

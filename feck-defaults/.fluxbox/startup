@@ -1,3 +1,9 @@
+numlockx &
+xscreensaver -nosplash &
 setxkbmap gb &
-exec fluxbox
+~/.fehbg &
+wmnd -i eth0 -w needle &
+
+(sleep 2 && xcompmgr -cC) &
+exec fluxbox 
 

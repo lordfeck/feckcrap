@@ -1,24 +1,33 @@
-[begin] (Start)
-# run xdg to generate the application menu
+[begin] (boundless)
+    [exec] (Terminal) {alacritty}
+    #put most sought here
     [include] (~/.fluxbox/xdg_menu)
-# put commonly used programs here
-    [exec] (Terminal) {xterm}
-    [separator]
-    [submenu] (Appearance)
-        [submenu] (System Styles) {Choose a style...}
-            [stylesdir] (/usr/share/fluxbox/styles)
-        [end]
-        [submenu] (User Styles) {Choose a style...}
-            [stylesdir] (~/.fluxbox/styles)
-        [end]
-    [end]
+    [include] (~/.fluxbox/non_xdg)
     [submenu] (FluxBox)
+        [submenu] (Appearance)
+            [submenu] (System Styles) {Choose a style...}
+                [stylesdir] (/usr/share/fluxbox/styles)
+            [end]
+            [submenu] (User Styles) {Choose a style...}
+                [stylesdir] (~/.fluxbox/styles)
+            [end]
+            [submenu] (Backgrounds)
+                [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+                [wallpapers] (/usr/share/fluxbox/backgrounds) {feh --bg-scale}
+            [end]
+        [end]
         [workspaces] (Workspaces)
         [config] (Configure)
         [reconfig] (Reconfig)
         [restart] (Restart)
         [exec] (Update Fluxbox Menu) {xdgmenumaker -f fluxbox > ~/.fluxbox/xdg_menu}
-        [separator]
-        [exit] (Exit)
     [end]
+    [separator]
+    [submenu] (Power)
+       [exec] (Power Off) {sudo poweroff}
+       [exec] (Reboot) {sudo reboot}
+       [exec] (Halt) {sudo halt}
+    [end]
+    [exit] (Exit)
+	[exec] (Lock Screen) {xscreensaver-command -lock}
 [end]
