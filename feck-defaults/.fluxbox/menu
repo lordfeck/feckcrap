@@ -1,6 +1,11 @@
 [begin] (boundless)
+    [exec] (Ripcord) {ripcord}
+    [exec] (Firefox) {firefox}
+    [exec] (Thunderbird) {thunderbird}
+    [exec] (RSSguard) {rssguard}
+    [exec] (Xfe) {xfe}
     [exec] (Terminal) {alacritty}
-    #put most sought here
+    [exec] (Music Centre) {alacritty -e ncmpcpp}
     [include] (~/.fluxbox/xdg_menu)
     [include] (~/.fluxbox/non_xdg)
     [submenu] (FluxBox)

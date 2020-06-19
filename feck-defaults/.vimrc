@@ -33,8 +33,10 @@ set nowrap
 map <F11> :tabp <CR>
 map <F12> :tabn <CR>
 
-colo desert
-set guifont=Monospace\ 9
+colo ron
+set guifont=Cousine\ 8
 
 " Open twig as Django
 autocmd BufNewFile,BufRead *.twig set syntax=django
+
+" Map Ctrl-V to paste

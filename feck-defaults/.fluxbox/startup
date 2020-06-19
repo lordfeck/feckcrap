@@ -1,9 +1,23 @@
-numlockx &
-xscreensaver -nosplash &
-setxkbmap gb &
-~/.fehbg &
-wmnd -i eth0 -w needle &
+# Dear Fluxbox, please:
+numlockx & # the only use for it
+xscreensaver -nosplash & # i am decade agnostic
+setxkbmap gb & # the queen's keyboard please
+~/.fehbg & # plain colours are passe even for me
 
+xrdb ~/.Xresources & # invite old settings to the party
+
+# BEGIN DOCKAPPS
+wmtime &
+wmix &
+wmMatrix &
+wmcube -G &
+WMmp -bl -lc rgb:6E/C1/B1 &
+wmbubble & # Load Emitting Duck
+wmnd -F -i eth0 -w needle &
+
+# This should stop the taskbar spazout:
 (sleep 2 && xcompmgr -cC) &
+
+# And we're ready.
 exec fluxbox 
 

@@ -9,10 +9,16 @@ window:
 
 font:
   normal:
-    style: ProFont for Powerline
+    family: Cousine
+    style: Regular 
 
   bold:
-    style: ProFont for Powerline Bold
+    family: Cousine
+    style: Bold
+  
+#  italic:
+#    family: Cousine
+#    style: Italic
   size: 9.0
 
 colors:

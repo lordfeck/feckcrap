@@ -35,10 +35,10 @@
 *.color7:       #707880
 *.color15:      #c5c8c6
 
-*.font: xft:Cousine:style=Regular:size=8
-*.boldFont: xft:Cousine:style=Bold:size=8
-*.italicFont: xft:Cousine:style=Italic:size=8
-*.boldItalicFont: xft:Cousine:style=Bold Italic:size=8
+URxvt.*.font: xft:Cousine:style=Regular:size=8
+URxvt.*.boldFont: xft:Cousine:style=Bold:size=8
+URxvt.*.italicFont: xft:Cousine:style=Italic:size=8
+URxvt.*.boldItalicFont: xft:Cousine:style=Bold Italic:size=8
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24
@@ -59,3 +59,39 @@ URxvt.keysym.Control-Up: \033[1;5A
 URxvt.keysym.Control-Down: \033[1;5B
 URxvt.keysym.Control-Right: \033[1;5C
 URxvt.keysym.Control-Left: \033[1;5D
+
+! WMBubble settings 
+wmbubble.maxbubbles: 100
+wmbubble.air_noswap: #2299FF
+wmbubble.air_maxswap: #FF0000
+wmbubble.liquid_noswap: #0055FF
+wmbubble.liquid_maxswap: #AA0000
+wmbubble.ripples: 0.2
+wmbubble.gravity: 0.01
+wmbubble.volatility: 1.0
+wmbubble.viscosity: 0.98
+wmbubble.speed_limit: 1.0
+wmbubble*duckbody: #F8FC00
+wmbubble*duckbill: #F8B040
+wmbubble*duckeye: black
+wmbubble*delay: 15000
+wmbubble*duck: yes
+wmbubble*upsidedown: yes
+wmbubble*cpumeter: yes
+wmbubble*graphdigit: #308cf0
+wmbubble*graphwarn: #ed1717
+wmbubble*graphlabel: #C1C400
+wmbubble*graphfield: #202020
+wmbubble*graphgrid: #062A00
+wmbubble*graphmax: #20B6AE
+wmbubble*graphbar: #007D71
+wmbubble*graphmarkers: #71E371
+wmbubble*graphs: yes
+wmbubble*units: kilobytes
+wmbubble*shifttime: 0
+wmbubble*digital: yes
+wmbubble*showdate: no
+wmbubble*analog: no
+wmbubble*hourcolor: #EEEEEE
+wmbubble*mincolor: #BF0000
+wmbubble*seccolor: #C79F2B

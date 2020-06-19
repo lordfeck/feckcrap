@@ -16,3 +16,7 @@ set expandtab
 " put into _gvimrc?
 set guifont=Noto_Mono_for_Powerline:h9:cANSI:qDRAFT
 
+" Map Ctrl-V to paste (already in msvim?)
+"nmap <C-V> "+gP
+"imap <C-V> <ESC><C-V>a
+"vmap <C-C> "+y
