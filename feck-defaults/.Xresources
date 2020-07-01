@@ -77,7 +77,7 @@ wmbubble*duckeye: black
 wmbubble*delay: 15000
 wmbubble*duck: yes
 wmbubble*upsidedown: yes
-wmbubble*cpumeter: yes
+wmbubble*cpumeter: no
 wmbubble*graphdigit: #308cf0
 wmbubble*graphwarn: #ed1717
 wmbubble*graphlabel: #C1C400
@@ -89,7 +89,7 @@ wmbubble*graphmarkers: #71E371
 wmbubble*graphs: yes
 wmbubble*units: kilobytes
 wmbubble*shifttime: 0
-wmbubble*digital: yes
+wmbubble*digital: no
 wmbubble*showdate: no
 wmbubble*analog: no
 wmbubble*hourcolor: #EEEEEE

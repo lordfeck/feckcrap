@@ -3,7 +3,8 @@
 # First, source master .profile:
 [ -f $HOME/.profile ] && source $HOME/.profile
 
-# Set env vars (only needs done once)
+# MPD daemon start (if no other user instance exists)
+[ ! -s $HOME/.mpdpid ] && mpd
 
 # BEGIN UBUNTU SUGGESTED:
 # append to the history file, don't overwrite it
@@ -17,8 +18,8 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-
 #END NOOBUNTU, BEGIN OWN:
+# Set env vars (only needs done once)
 export MPD_PORT="6600"
 export PRE_CXX=ccache
 export VISUAL="/usr/bin/vim"

@@ -3,7 +3,7 @@
     [exec] (Firefox) {firefox}
     [exec] (Thunderbird) {thunderbird}
     [exec] (RSSguard) {rssguard}
-    [exec] (Xfe) {xfe}
+    [exec] (SpaceFM) {spacefm}
     [exec] (Terminal) {alacritty}
     [exec] (Music Centre) {alacritty -e ncmpcpp}
     [include] (~/.fluxbox/xdg_menu)
