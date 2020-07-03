@@ -1,10 +1,9 @@
 # Dear Fluxbox, please:
-numlockx & # the only use for it
+numlockx # the only use for it
+setxkbmap gb # the queen's keyboard please
+xrdb ~/.Xresources # invite old settings to the party
 xscreensaver -nosplash & # i am decade agnostic
-setxkbmap gb & # the queen's keyboard please
 ~/.fehbg & # plain colours are passe even for me
-
-xrdb ~/.Xresources & # invite old settings to the party
 
 # BEGIN DOCKAPPS
 wmtime &
@@ -20,4 +19,3 @@ wmnd -F -i eth0 -w needle &
 
 # And we're ready.
 exec fluxbox 
-
