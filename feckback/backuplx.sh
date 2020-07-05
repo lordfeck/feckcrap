@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Feckback: Linux Backup Script
+# Author: Lordfeck. Authored: 5/07/2020
+
 function checkFatal {
     [ "$?" -ne "0" ] && echo "$@"
 }
