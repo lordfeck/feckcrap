@@ -5,7 +5,7 @@
 
 function checkFatal {
     if [ "$?" -ne "0" ]; then 
-        echo "$@"
+        echo "Failure when $@"
         exit 1
     fi
 }
@@ -22,7 +22,7 @@ else
 fi
 
 source "$fbConf"
-checkFatal  "Couldn't read config file. Exiting."
+checkFatal  "reading config file. Exiting."
 
 
 if [ ! -e "$excludeText" ]; then
