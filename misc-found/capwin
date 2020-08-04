@@ -1,0 +1,11 @@
+#!/bin/bash
+# Source: Arch Wiki - not my work!
+# Uses imagemagick to capture currently active window (or root)
+
+if [ "$1" = "root" ]; then
+    import -window root /tmp/$(date +%F_%H%M%S_%N).png
+    exit
+fi
+activeWinLine=$(xprop -root | grep "_NET_ACTIVE_WINDOW(WINDOW)")
+activeWinId=${activeWinLine:40}
+import -window "$activeWinId" /tmp/$(date +%F_%H%M%S_%N).png

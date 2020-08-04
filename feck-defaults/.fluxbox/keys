@@ -63,11 +63,20 @@ Mod1 F1 :Exec alacritty
 # open a dialog to run programs
 Mod1 F2 :Exec fbrun
 
+# Print current window (using imagemagick wrapper script)
+Mod1 Print :Exec capwin
+Print :Exec capwin root
+
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-176 :Exec amixer sset Master,0 1+
-174 :Exec amixer sset Master,0 1-
-160 :Exec amixer sset Master,0 toggle
+XF86AudioRaiseVolume :Exec amixer sset Master,0 1+
+XF86AudioLowerVolume :Exec amixer sset Master,0 1-
+XF86AudioMute :Exec amixer sset Master,0 toggle
+
+# mpc map to play and pause keys
+XF86AudioPlay :Exec mpc toggle
+XF86AudioNext :Exec mpc next
+XF86AudioLast :Exec mpc prev
 
 # current window commands
 Mod1 F4 :Close

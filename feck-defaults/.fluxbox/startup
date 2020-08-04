@@ -1,7 +1,7 @@
 # Dear Fluxbox, please:
 numlockx # the only use for it
 setxkbmap gb # the queen's keyboard please
-xrdb ~/.Xresources # invite old settings to the party
+xrdb -merge ~/.Xresources # invite old settings to the party
 xscreensaver -nosplash & # i am decade agnostic
 ~/.fehbg & # plain colours are passe even for me
 

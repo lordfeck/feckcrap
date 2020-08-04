@@ -52,11 +52,11 @@ colors:
     cyan:    '0x6ae3fa'
     white:   '0xffffff'
 
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 10
   color: '0xffffff'
 
 background_opacity: 0.8
 
-dynamic_title: true
+window.dynamic_title: true
