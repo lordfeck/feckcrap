@@ -32,7 +32,12 @@ Call `./feckback.sh <jobname>` and the config and exclude files for that job wil
 Run `./feckback.sh`. If your hosts are configured correctly, this should work.
 
 ## Auxilary Scripts
-`syncnas.sh` Run this on any host to sync the contents of the network destination drive with portable storage. It's always wise to backup your backups.
+### syncnas.sh 
+It's always wise to backup your backups. So, I wrote this script because by Synology NAS couldn't write any data to USB without corrupting the filesystem. 
+
+Syncnas should be run on an external headless device such as a RPi. It will sync the contents of the network drive with portable storage, assuming you've ssh access and rsync running.
+
+It uses nohup to continue running after logout.
 
 ## Coming soon
 `backupwin.cmd` - Windows Files Matter.
