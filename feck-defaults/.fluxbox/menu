@@ -26,6 +26,9 @@
         [reconfig] (Reconfig)
         [restart] (Restart)
         [exec] (Update Fluxbox Menu) {xdgmenumaker -f fluxbox > ~/.fluxbox/xdg_menu}
+        [exec] (Start Compositor) {xcompmgr}
+        [exec] (Kill Compositor) {pkill xcompmgr && beep}
+        [exec] (Kill Screensaver) {pkill xscreensaver && beep}
     [end]
     [separator]
     [submenu] (Power)

@@ -40,3 +40,7 @@ set guifont=Cousine\ 8
 autocmd BufNewFile,BufRead *.twig set syntax=django
 
 " Map Ctrl-V to paste
+
+" netrw like nerdtree (somewhat)
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
