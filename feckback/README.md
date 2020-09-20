@@ -1,7 +1,7 @@
 # FECKBACK
 A specifically-tailored backup script collection. Works well for my situation. It may also work well for yours!
 
-*Licence* 3BSD. Not GPL because I don't want contributions.
+*Licence* 3BSD. Not GPL because I don't want contributions, but you're free to it!
 
 # Requirements
 * Bash
@@ -39,5 +39,5 @@ Syncnas should be run on an external headless device such as a RPi. It will sync
 
 It uses nohup to continue running after logout.
 
-## Coming soon
-`backupwin.cmd` - Windows Files Matter.
+## Future plans
+`backupwin.cmd` - An equivalent in Windows Batch (*not* Bash) to backup and copy Windows files.
