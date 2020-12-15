@@ -13,8 +13,10 @@ set background=dark
 " 256 colour mode
 set t_Co=256
 
-" Line number bar
-set number
+" Line number bar, highlight results, incremental results
+set number hlsearch incsearch
+" possibly useful
+"set ignorecase noswapfile
 
 " Ensure 4 spaces rather than 8
 set tabstop=4
