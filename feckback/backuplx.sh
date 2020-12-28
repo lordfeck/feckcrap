@@ -4,7 +4,7 @@
 # Author: Lordfeck. Authored: 5/07/2020
 
 function checkFatal {
-    if [ "$?" -ne "0" ]; then 
+    if [ "$?" -ne "0" ]; then
         echo "Failure when $@"
         exit 1
     fi
@@ -12,7 +12,7 @@ function checkFatal {
 
 # Params indicate a jobname, otherwise homedir
 if [ ! -n "$1" ]; then
-    jobname="default (homedir)"
+    jobname="homedir"
     fbConf="${HOME}/.config/feckback.conf"
     excludeText="${HOME}/.config/feckback.exclude"
 else
@@ -36,7 +36,7 @@ fi
 : ${destHost:?"Fatal: Backup destination host unset."}
 : ${localDest:?"Fatal: Local destination path unset."}
 
-backupFile="$( hostname )-${USER}.tar.gz"
+backupFile="$( hostname )-${USER}-${jobname}.tar.gz"
 
 # Begin main execution... or interpretation?
 
